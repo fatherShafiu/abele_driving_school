@@ -12,19 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2020_11_14_221957) do
 
-  create_table "applicants", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "phone"
-    t.string "gender"
-    t.string "status"
-    t.string "date_of_birth"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-  create_table "new_students", force: :cascade do |t|
+  create_table "applicants", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"
