@@ -1,5 +1,5 @@
 {
-  "name": "Abele_driving_school",
+  "name": "abele_driving_school",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
