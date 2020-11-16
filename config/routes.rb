@@ -19,6 +19,6 @@ Rails.application.routes.draw do
   get 'staticpages/about'
   get 'staticpages/help'
   get 'home/about'
-  get 'home/help'
+  get  'help' 'home/help'
 
 end

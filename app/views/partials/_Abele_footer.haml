@@ -5,7 +5,7 @@
   %ul
     %li About
     
-    %li Help
+    %li=lin_to 'Help' help_path
     -if signed_in?
       %li=link_to 'Applicants', list_path
     -else 
