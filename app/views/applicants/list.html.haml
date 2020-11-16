@@ -1,0 +1,47 @@
+-if user_signed_in?
+  -if @applicant.blank? 
+    %p.list There are not any applicants currently in the system
+  -else  
+    %h3.list These are the current applicants in our system
+    .student_list_number
+      -@applicant.each do |c|
+        .student_list
+          %li 
+            .span 
+              %strong Applicant 
+              %strong=c.id
+            %hr
+            .first_and_last_name
+              Student Name:
+              =c.first_name
+              =c.last_name
+            .email
+              Email:
+              =c.email
+            .phone
+              Phone:
+              =c.phone
+            .gender_field
+              Gender:
+              =c.gender
+            .status
+              Driving Level:
+              =c.status
+            .birth
+              Date of birth : 
+              =c.date_of_birth
+            %hr
+            -#%span Added to checkout #{time_ago_in_words(applicant.created_at)} ago.
+          %br
+-else 
+  .sign_in_message 
+    If you are an Admin at Abele Driving School(Tamale or Bolga) please click on the link below to see 
+    .span log in and see applications.
+
+-#-<li>= link_to c.first_name, {:action => 'show', :id => c.id} -</li> -->
+  end  </ul> 
+  end 
+-#<p>= link_to "Add new applicant", {:action => 'new' }</p>
+%br
+%br
+=render 'partials/Abele_footer'

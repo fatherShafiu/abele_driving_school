@@ -1,0 +1,13 @@
+%footer
+  -#.top=image_tag 'images\ust.jpg', {style: "width:20px; heigh:30px;" }
+  %div{style:"text-align: center;"} Abele Driving School
+  <hr size="2" noshade color="white">
+  %ul
+    %li About
+    
+    %li Help
+    -if signed_in?
+      %li=link_to 'Applicants', list_path
+    -else 
+      %li=link_to 'login', login_path
+ 

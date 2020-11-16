@@ -1,0 +1,116 @@
+-provide(:title, 'Abele Driving| home')
+=render 'partials/top_head'
+%hr
+#covering
+  %marquee.below_top_bar  
+    Abele Driving School <i class="fa fa-car" aria-hidden="true"></i>. Branches: Tamale Branch and Bolga |
+    Bolga Branch. Contact: +23320520100/ +233540209999/ +233269403333/ +233270442222 |
+  .head_view
+    .heading
+      -#=image_tag 'circle.png'
+      %h1 
+        <i Style = "color:red" class="fa fa-car" aria-hidden="true"></i> Abele Driving School
+      %span.middle_logo <i class="fa fa-bus" aria-hidden="true"></i>  
+    -#<hr noshade size="5">
+    %h4 welcome to Abele Driving school where we offer you the best of training and expel you into greatness in the field of driving
+  <hr>
+  .content
+    %ul
+      %li Home
+      %li=link_to 'Gallery' ,'#'
+      %li=link_to 'Apply' , apply_path
+    .content_bar
+      .home_path
+        %marquee  
+          Abele Driving School <i class="fa fa-car" aria-hidden="true"></i>. Branches: Tamale Branch and Bolga |
+          Bolga Branch. Contact: +23320520100/ +233540209999/ +233269403333/ +233270442222 |
+        %p 
+          At Abele driving school we provide you with the best of training that will equip you with more than enough | 
+          skills to navigate the road terrain.                                                                       |
+        %h3   Our mission
+        %hr
+        %p Abele driving School train people who wish to learn how to drive in a more efficient way.
+        %p A beginner or an intermediate in driving, the best of choice to perfect yourself is to enroll in our school
+        %p when you train with us
+        %p You get a linsence cover after training with us
+.connect_with_us_1
+  %h3 Our school and its branches 
+  .connect_content
+    %p 
+      we mentor individual both theoritically and practically. The school equips its 
+      students with driving prowess and makes the student a master of road.
+  %p
+    The school has two main branches
+%br
+.connect_with_us_2
+  %h3 How to connect with us 
+  .connect_content
+    %strong 
+      To reach us on phone, you can please call the following numbers 
+      %ul 
+        %li +23320520100
+        %li +233540209999
+        %li +233269403333
+        %li +233270442222
+    %strong You can also Email us using the Email Address below 
+    %li 
+      click on the link to email us your consent
+      =mail_to "me@domain.com", "My email"
+%br
+.connect_with_us_3 
+  %h3 How to apply and become a student
+  .connect_content
+    %p 
+      To apply to Abele Driving school, please click on the link below or you can click |
+      on Apply on the navigation Bars around. 
+      =link_to 'Apply' , apply_path
+%br
+.connect_with_us_4
+  %h3 Training
+  .connect_content
+    We Train Beginners in Driving and also organize refresher |
+    courses for professional drivers in defensive driving
+    %strong 
+      Training usually takes a period of five to six wekks | 
+      and you are done. Hurray!! Abele has made you a professional |
+      driver.
+%br
+.connect_with_us_5
+  %h3 After Training with Abele what next 
+  .connect_content
+    %p 
+      After receiving mentorship and training with Abele driving school, we take th %responsibility
+      of  acquiring  lincense for our applicants.
+%br
+.connect_with_us
+  .connect_with_us_6
+    %h3 What you stand to gain when you enroll in our school
+    .connect_content
+      %p Your Acquire Power and confidence to Navigate the road terrain.
+%br
+%br 
+.images_container
+  =image_tag 'tutoring_session.jpg'
+  %p 
+    Students receiving theorical lessons at Abele driving |
+    in Tamale at the Abele Driving school Tamale Branch    |
+%br 
+.images_container
+  =image_tag 'tutoring_session1.jpg'
+  %p Practical training in field after theoritical lessons
+%br 
+.images_container
+  =image_tag 'car5.jpg'
+%br
+%br                                                                                               |
+
+:javascript
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  }
+=render 'partials/Abele_footer'

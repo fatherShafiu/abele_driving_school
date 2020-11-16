@@ -1,0 +1,43 @@
+- provide(:title, 'Abele | Application Form')  
+=render 'partials/top_head'
+%hr
+%div#signup_form
+  %h3 form Please fill the application form to apply to Abele Driving School
+  %div.row 
+    %div.vessle
+    %div.forminside
+      =form_tag :action => 'create' do |f| 
+        =label_tag :first_name
+        = text_field_tag :first_name    
+        = label_tag :last_name 
+        = text_field_tag :last_name     
+        = label_tag :email  
+        = email_field_tag :email     
+        = label_tag :phone
+        = number_field_tag :phone, data: {numeric: true , max:10, min:10} 
+        .date 
+          =label_tag :Date
+          =date_field_tag :date_of_birth
+        .gender 
+          Gender
+          %br
+          %br
+          = radio_button_tag :gender, 'male' 
+          %span.male Male
+          = radio_button_tag :gender, 'female'   
+          %span.female Female
+        %br
+        .level
+          Level In Driving
+          %br
+          %br
+          = radio_button_tag :status, 'Beginner in Driving' 
+          %span Beginner 
+          = radio_button_tag :status, 'Intermediate  in Driving'   
+          %span Inter-mediate
+        
+        %br
+        =submit_tag "apply" 
+%br
+%br 
+=render 'partials/Abele_footer'  
