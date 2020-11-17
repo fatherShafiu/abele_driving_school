@@ -15,8 +15,7 @@ class ApplicantsController < ApplicationController
     def create 
         @applicant = Applicant.new(applicant_params) 
         if @applicant.save 
-            flash[:success] = "food added to cart!" 
-            redirect_to list_path
+            redirect_to success_message_path
         else 
           render 'new' 
         end

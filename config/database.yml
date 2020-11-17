@@ -1,3 +1,19 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+#
+# Install the pg driver:
+#   gem install pg
+# On macOS with Homebrew:
+#   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
+# On macOS with MacPorts:
+#   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
+# On Windows:
+#   gem install pg
+#       Choose the win32 build.
+#       Install PostgreSQL and put its /bin directory on your path.
+#
+# Configure Using Gemfile
+# gem 'pg'
+#
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -7,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: standup_app_development
+  database: abele_driving_school_development
   username: postgres
   password: 3pyntl4
 
@@ -15,7 +31,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: standup_app
+  #username: abele_driving_school
 
   # The password associated with the postgres role (username).
   #password:
@@ -43,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: standup_app_test
+  database: abele_driving_school_test
   username: postgres
   password: 3pyntl4
 
@@ -68,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: standup_app_production
+  database: abele_driving_school_production
   username: postgres
   password: 3pyntl4

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root          'staticpages#home'
+  devise_for :users
   as :user do
     get 'login', to: 'devise/sessions#new'
   end
@@ -15,10 +16,10 @@ Rails.application.routes.draw do
   get 'applicants/delete' 
   get 'applicants/success_message' 
   get 'applicants/show_subjects'
-  root          'staticpages#home'
   get 'staticpages/about'
   get 'staticpages/help'
   get 'home/about'
   get  'help' => 'staticpages#help'
+  get  'success_message' => 'applicants#success_message' 
 
 end
