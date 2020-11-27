@@ -1,4 +1,4 @@
--provide(:title, 'Abele Driving| home')
+-provide(:title, 'Abele Driving school | Home')
 =render 'partials/top_head'
 %hr
 #covering
@@ -9,8 +9,9 @@
     .heading
       -#=image_tag 'circle.png'
       %h1 
-        <i Style = "color:red" class="fa fa-car" aria-hidden="true"></i> Abele Driving School
-      %span.middle_logo <i class="fa fa-bus" aria-hidden="true"></i>  
+        &nbsp;<i Style = "color:red" class="fa fa-car" aria-hidden="true"></i> Abele Driving School
+      %span.middle_logo 
+        %small ADS
     -#<hr noshade size="5">
     %h4 welcome to Abele Driving school where we offer you the best of training and expel you into greatness in the field of driving
   <hr>
@@ -26,26 +27,38 @@
           Bolga Branch. Contact: +23320520100/ +233540209999/ +233269403333/ +233270442222 |
         %p 
           At Abele driving school we provide you with the best of training that will equip you with more than enough | 
-          skills to navigate the road terrain.                                                                       |
-        %h3   Our mission
+          skills to navigate the road terrain.
+        .message                                                                   |
+          %h3 Our mission
         %hr
-        %p Abele driving School train people who wish to learn how to drive in a more efficient way.
+        %p Abele driving School train people who wish to learn how to drive in a more efficient way. We call it defensive driving
         %p A beginner or an intermediate in driving, the best of choice to perfect your skill is to enroll in our school
-        %p You get a linsence cover after training with us
+        %p You get a license cover after training with us
+        .message 
+          .remember Always be Wise to learn Defensive Driving
 .connect_with_us_1
   %h3 Our school and its branches 
   .connect_content
     %p 
-      we mentor individual both theoritically and practically. The school equips its 
-      students with driving prowess and makes the student a master of road.
+      we mentor individuals both theoritically and practically. The school equips its 
+      students with driving prowess and makes the student a master of road navigation.
   %p
     The school has two main branches
+    %li 
+      %strong{style:"color:red"} Tamale Branch 
+      %br
+      %span Location : on the estates road before Anglican School
+    %li 
+      %strong{style:"color:red"} Bolga Branch
 %br
 .connect_with_us_2
   %h3 How to connect with us 
   .connect_content
     %strong 
-      To reach us on phone, you can please call the following numbers 
+      To talk to us about our fees, training , mentorship and any other enquiries, please read below.
+      %br
+      %br
+      %span{style:"color:red"} To reach us on phone, you can please call the following numbers 
       %ul 
         %li +23320520100
         %li +233540209999
@@ -54,7 +67,7 @@
     %strong You can also Email us using the Email Address below 
     %li 
       click on the link to email us your consent
-      =mail_to "abukariattah1@gmail.com", "Email Us"
+      =mail_to "abukariattah1@gmail.com", "Email ADS"
 %br
 .connect_with_us_3 
   %h3 How to apply and become a student
@@ -68,9 +81,11 @@
   %h3 Training
   .connect_content
     We Train Beginners in Driving and also organize refresher |
-    courses for professional drivers in defensive driving
-    %strong 
-      Training usually takes a period of five to six wekks | 
+    courses for professional drivers in defensive driving.
+    %strong
+      %br
+      %br 
+      Training usually takes a period of five to six weeks | 
       and you are done. Hurray!! Abele has made you a professional |
       driver.
 %br
@@ -78,31 +93,39 @@
   %h3 After Training with Abele what next 
   .connect_content
     %p 
-      After receiving mentorship and training with Abele driving school, we take th %responsibility
-      of  acquiring  lincense for our applicants.
+      After receiving mentorship and training from Abele driving school(ADS), we take the responsibility
+      of  acquiring  license for our applicants.
 %br
-.connect_with_us
-  .connect_with_us_6
-    %h3 What you stand to gain when you enroll in our school
-    .connect_content
-      %p Your Acquire Power and confidence to Navigate the road terrain.
+.connect_with_us_6
+  %h3 What you stand to gain when you enroll in our school
+  .connect_content
+    %p Your Acquire Power and confidence to Navigate the road terrain.
 %br
 %br 
+.images_container
+  =image_tag 'adminoffice.jpg'
+  %p.message ADS Administrators Office
+.images_container
+  =image_tag 'class.jpg'
+  %p.message  View of a  classroom at Abele for theoritical lessons
 .images_container
   =image_tag 'tutoring_session.jpg'
   %p.message 
     Students receiving theorical lessons at Abele driving |
-    in Tamale at the Abele Driving school Tamale Branch    |
+    in Tamale at  Abele Driving school Tamale Branch    |
 %br 
+.images_container
+  =image_tag 'abelepost.jpg'
+  %p.message
+    %strong Motto : Be wise to learn Defensive Driving.
 .images_container
   =image_tag 'field.jpg'
   %p.message Practical training in field after theoritical lessons
 %br 
 .images_container
-  =image_tag 'car5.jpg'
+  =image_tag 'abeleart.jpg'
 %br
 %br                                                                                               |
-
 :javascript
   function myFunction() {
   var x = document.getElementById("myLinks");

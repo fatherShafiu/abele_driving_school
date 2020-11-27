@@ -7,6 +7,8 @@
     %div.vessle
     %div.forminside
       =form_tag :action => 'create' do |f| 
+        = render 'layouts/errors'
+        %kpj
         =label_tag :first_name
         = text_field_tag :first_name    
         = label_tag :last_name 
