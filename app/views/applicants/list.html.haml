@@ -12,23 +12,23 @@
               %strong=c.id
             %hr
             .first_and_last_name
-              Student Name:
+              %strong Student Name:
               =c.first_name
               =c.last_name
             .email
-              Email:
+              %strong Email:
               =c.email
             .phone
-              Phone:
+              %strong Phone:
               =c.phone
             .gender_field
-              Gender:
+              %strong Gender:
               =c.gender
             .status
-              Driving Level:
+              %strong Driving Level:
               =c.status
             .birth
-              Date of birth : 
+              %strong Date of birth : 
               =c.date_of_birth
             %hr
             -#%span Added to checkout #{time_ago_in_words(applicant.created_at)} ago.

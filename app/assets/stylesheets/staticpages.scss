@@ -669,14 +669,7 @@ footer{
     .cart_button{
       float: left;
     }
-    @media screen and (max-width:800px){
-     .student_list{
-       width:90%;
-     }
-     .content{
-       height: max-content;
-     }
-    }
+    
     .student_list_number{
       width: 40em;
       margin: 0 auto;
@@ -685,6 +678,7 @@ footer{
         list-style: none;
       }
     }
+
     h3.list,h.form{
       text-align: center;
       width: 99%;
@@ -698,6 +692,31 @@ footer{
       color: black;
       text-align: center;
     }
+    @media screen and (max-width:800px){
+      .student_list{
+        width:98%;
+        overflow: auto;
+      }
+      .content{
+        height: max-content;
+      }
+      .student_list_number{
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+        li{
+          width: 98%;
+          list-style: none;
+        }
+      }
+      
+    h3.list,h.form{
+      text-align: center;
+      width: 95%;
+
+
+    }
+     }
     /*.connect_with_us_2,
     .connect_with_us_4,
     .connect_with_us_6{
