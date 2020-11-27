@@ -1,4 +1,5 @@
 class ApplicantsController < ApplicationController
+    before_action :signed_in?, only: [:list]
     
     def list 
         @applicant= Applicant.all
