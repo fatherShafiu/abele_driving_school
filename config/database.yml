@@ -61,7 +61,7 @@ test:
   <<: *default
   database: abele_driving_school_test
   username: postgres
-  password: 3pyntl4
+  password: 12345
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -86,4 +86,4 @@ production:
   <<: *default
   database: abele_driving_school_production
   username: postgres
-  password: 3pyntl4
+  password: 12345
